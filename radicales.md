@@ -1,14 +1,14 @@
 # Operaciones con radicales
 | **Caso** | **Ejemplo** | **Explicación** | **Notas** | **Resultado** |
 |----------|-------------|-----------------|--------------|---------------|
-| **Extraer factores**<br>exponente $<$ índice | $\sqrt[3]{2^2}$ | $2 < 3$, no se puede simplificar | | $\sqrt[3]{4}$ |
-| **Extraer factores**<br>exponente $=$ índice | $\sqrt[3]{5^3}$ | $3 = 3$, el factor sale completo. | | $5$ |
-| **Extraer factores**<br>exponente $>$ índice | $\sqrt[5]{7^{17}}$ | Se divide el exponente entre el índice.<br>Luego el cociente sale y el resto se queda | $17\div5$<br>$3 =$ cociente<br>$2 =$ resto | $7^3 \cdot \sqrt[5]{7^2}$ |
-| **Introducir factores** | $2\sqrt{3}$ | El número fuera del radical se mete dentro elevándolo al índice y multiplicando. | | $2\sqrt{3} = \sqrt{2^2 \cdot 3}$ |
-| **Radicales semejantes directos**<br>Sumar, restar | $5\sqrt{2} + 5\sqrt{2} - 3\sqrt{2}$ | Se pueden sumar o restar porque tienen el mismo índice y radicando | $(5 + 5 - 3)\sqrt{2}$ | $7\sqrt{2}$ |
-| **Radicales no semejantes al inicio** | $\sqrt{50} + \sqrt{8}$ | Al inicio parecen distintos, pero al descomponer se transforman en semejantes. | $\sqrt{50} = \sqrt{2\cdot5^2}$ <br> $\sqrt{8} = \sqrt{2^3}$ <br><br> $\sqrt{2\cdot5^2} = 5\sqrt{2}$<br>$\sqrt{2^3} = \sqrt{2^2\cdot2}$<br><br>$5\sqrt{2} + 2\sqrt{2}$ | $7\sqrt{2}$ |
-| **División de radicales** | $\sqrt[5]{4} : \sqrt[3]{2}$ | Es necesario mismo índice.<br> $mcm(5,3)=15$. | $\sqrt[15]{(2^2)^3} : \sqrt[15]{2^5} = \sqrt[15]{2^6 : 2^5}$ | $\sqrt[15]{2}$ |
-| **Multiplicación de radicales** | $\sqrt{3} \cdot \sqrt[3]{2}$ | Es necesario mismo índice.<br> $mcm(2,3)=6$. | $\sqrt[6]{3^3} \, \sqrt[6]{2^2} = \sqrt[6]{3^3 \cdot 2^2}$. | $\sqrt[6]{108}$ |
+| **Extraer factores**<br>exponente $<$ índice | $\sqrt[3]{2^2}$ | $2 < 3$, no se puede simplificar | | $\sqrt[3]{2^2}$ |
+| **Extraer factores**<br>exponente $=$ índice | $\sqrt[3]{5^3}$ | $3 = 3$, el factor sale completo | | $5$ |
+| **Extraer factores**<br>exponente $>$ índice | $\sqrt[5]{7^{17}}$ | Se divide el exponente entre el índice y el cociente sale y el resto se queda | $17\div5$<br>$3 =$ cociente<br>$2 =$ resto | $7^3 \cdot \sqrt[5]{7^2}$ |
+| **Introducir factores** | $2\sqrt{3}$ | El número fuera del radical se mete dentro elevándolo al índice y multiplicando. | | $\sqrt{2^2 \cdot 3}$ |
+| **Radicales semejantes directos**<br>Sumar, restar | $5\sqrt{2} + 5\sqrt{2} - 3\sqrt{2}$ | Se pueden sumar o restar porque tienen el mismo índice y radicando<br>(*incluye base y exponente*) | $(5 + 5 - 3)\sqrt{2}$ | $7\sqrt{2}$ |
+| **Radicales no semejantes al inicio**<br>Sumary, restar | $\sqrt{50} + \sqrt{8}$ | Al inicio son distintos, pero al descomponer se transforman en semejantes | $\sqrt{50} = \sqrt{2\cdot5^2}$ <br> $\sqrt{8} = \sqrt{2^3}$ <br><br> $\sqrt{2\cdot5^2} = 5\sqrt{2}$<br> $\sqrt{2^3} = \sqrt{2^2\cdot2} = 2\sqrt{2}$<br><br>$5\sqrt{2} + 2\sqrt{2}$ | $7\sqrt{2}$ |
+| **División de radicales** | $\sqrt[5]{4} : \sqrt[3]{2}$ | Es necesario mismo índice.<br> $mcm(5,3)=15$. | $\sqrt[15]{(2^2)^3} : \sqrt[15]{2^5} = \sqrt[15]{2^6 : 2^5} = \sqrt[15]{2^{6-5}}$ | $\sqrt[15]{2}$ |
+| **Multiplicación de radicales** | $\sqrt{3} \cdot \sqrt[3]{2}$ | Es necesario mismo índice.<br> $mcm(2,3)=6$. | $\sqrt[6]{3^3} \, \sqrt[6]{2^2} = \sqrt[6]{3^3 \cdot 2^2} = \sqrt[6]{27\cdot4}$. | $\sqrt[6]{108}$ |
 | **Potencia de una raíz** | $(\sqrt{5})^2$ | El exponente solo afecta al radicando. | $(\sqrt{5})^2 = \sqrt{25}$ | $5$ |
 | **Raíz de una raíz** | $\sqrt[2]{\sqrt[3]{7}}$ | Los índices se multiplican. | $\sqrt[2]{\sqrt[3]{7}} = \sqrt[6]{7}$ | $\sqrt[6]{7}$ |
 
@@ -23,7 +23,7 @@ Un **número primo** es un número natural mayor que $1$ que tiene únicamente d
 
 $2, 3, 5, 7, 11, \ldots$
 
-## Regla
+### Regla
 Para descomponer cualquier número $N$:
 
 - Intenta dividirlo entre el primo más pequeño ($2$).
@@ -32,7 +32,7 @@ Para descomponer cualquier número $N$:
 - Repite el proceso con primos cada vez mayores ($2, 3, 5, 7, 11, \ldots$) hasta llegar a $1$.
 - El resultado son los factores primos con sus exponentes.
 
-## Ejemplo
+### Ejemplo
 $45$
 
 - No se puede dividir entre $2$, probamos con $3$.
@@ -53,7 +53,7 @@ Es el número más pequeño que es múltiplo de dos o más números.
   - Múltiplos de 6: 6, 12, 18, 24...
   - El menor es 12, luego mcm(4,6) = 12
 
-#### Cálculo de mcm con descomposición en factores primos
+### Cálculo de mcm con descomposición en factores primos
 - Se descomponen los números en factores primos.
 - Tomas cada primo que aparezca, con el exponente mayor con el que se presente.
 - Multiplicas todo.
@@ -88,15 +88,15 @@ $60 = 2^2 \cdot 3 \cdot 5$
 $MCD(36,48,60) = 2^2 \cdot 3 = 12$
 
 # Racionalizar
-Significa pasar de una fracción *con* raíces en en el denominador a una equivalente *sin* raíces en el denominador.
+Significa pasar de una fracción *con* raíces en en el denominador a una fracción equivalente **sin raíces en el denominador**.
 
-> Se busca que el denominador sea un número racional (de ahí el nombre).
+*Se busca que el denominador sea un número racional (de ahí el nombre).*
 
 | **Caso** | **Ejemplo** | **Explicación** | **Desglose** | **Resultado** |
 |----------|-------------|-----------------|--------------|---------------|
 | $\dfrac{a}{b\sqrt{c}}$ | $\dfrac{2}{3\sqrt{2}}$ | Se multiplica numerador y denominador por $\sqrt{c}$. | $\dfrac{2}{3\sqrt{2}} \cdot \dfrac{\sqrt{2}}{\sqrt{2}} = \dfrac{2\sqrt{2}}{3\cdot 2}$ | $\dfrac{\sqrt{2}}{3}$ |
-| $\dfrac{a}{b\sqrt[n]{c^m}}$ | $\dfrac{5}{\sqrt[3]{2^2}}$ | Si $m<n$, se multiplica por lo que falta para completar la potencia. | $\dfrac{5}{\sqrt[3]{4}} \cdot \dfrac{\sqrt[3]{2}}{\sqrt[3]{2}} = \dfrac{5\sqrt[3]{2}}{\sqrt[3]{8}} = \dfrac{5\sqrt[3]{2}}{2}$ | $\dfrac{5\sqrt[3]{2}}{2}$ |
-| $\dfrac{a}{\sqrt{b} \pm \sqrt{c}}$ | $\dfrac{2}{\sqrt{2} - \sqrt{3}}$ | Se multiplica por el conjugado (*cambiar el signo entre 2 términos*) del denominador. | $\dfrac{2}{\sqrt{2} - \sqrt{3}} \cdot \dfrac{\sqrt{2} + \sqrt{3}}{\sqrt{2} + \sqrt{3}} = \dfrac{2\sqrt{2} + 2\sqrt{3}}{2-3}$ | $-2\sqrt{2} - 2\sqrt{3}$ |
+| $\dfrac{a}{b\sqrt[n]{c^m}}$ | $\dfrac{5}{\sqrt[3]{2^2}}$ | Si $m<n$, se multiplica por lo que falta para completar la potencia.<br> Si $m>=n$, o bien no hay raíz o bien se puede simplificar y entonces ya no habría raíz en el denominador. | $\dfrac{5}{\sqrt[3]{4}} \cdot \dfrac{\sqrt[3]{2}}{\sqrt[3]{2}} = \dfrac{5\sqrt[3]{2}}{\sqrt[3]{8}}$ | $\dfrac{5\sqrt[3]{2}}{2}$ |
+| $\dfrac{a}{\sqrt{b} \pm \sqrt{c}}$ | $\dfrac{2}{\sqrt{2} - \sqrt{3}}$ | Se multiplica por el conjugado (*cambiar el signo entre 2 términos*) del denominador. | $\dfrac{2}{\sqrt{2} - \sqrt{3}} = \dfrac{2 \cdot (\sqrt{2} + \sqrt{3})}{(\sqrt{2} - \sqrt{3})(\sqrt{2} + \sqrt{3})} = \dfrac{2\sqrt{2} + 2\sqrt{3}}{(\sqrt{2})^2 - (\sqrt{3})^2} = \dfrac{2\sqrt{2} + 2\sqrt{3}}{2 - 3} = \dfrac{2\sqrt{2} + 2\sqrt{3}}{-1}$ | $-2\sqrt{2} - 2\sqrt{3}$ |
 
 # Redondeo, cifras significativas y errores
 - Aproximar un número real significa sustituirlo por otro con sólo algunas de sus primeras cifras decimales (se denominan *cifras significativas*).
